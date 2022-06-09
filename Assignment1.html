@@ -10,49 +10,46 @@
     <form action="">
     <h1>Temperament Test</h1>
     
-<label for="fname">First Name:</label>
-<input type="text" id="fname" name="fname" required>
+    <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" required>
+    <label for="lname">Last Name:</label>
+    <input type="text" id="lname" name="lname" required>
 
-<label for="lname">Last Name:</label>
-<input type="text" id="lname" name="lname" required>
+    <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>   
+    <label for="interest">What are your interests?:</label>
+        <textarea id="interest" name="interest">
+        </textarea>
 
-<label for="age">Age:</label>
-<input type="number" id="age" name="age" required>   
+    <label for="self-description">How do you describe yourself?:</label>
+        <select name="self-status" id="self-description">
+            <option value="">--Please choose an option--</option>
+            <option value="adult">I am an adult</option>
+            <option value="teenager">I am a teenager</option>
+            <option value="parent">I'm taking the test for my child</option>
+        </select>
+    <label for="relationship-status">What is your relationship status?:</label>
 
-<label for="interest">What are your interests?:</label>
-<textarea id="interest" name="interest">
-</textarea>
+    <select name="relationship" id="relationship-status">
+        <option value="">--Select your status--</option>
+        <option value="adult">I am in a relationship</option>
+        <option value="teenager">I am single</option>
+    </select>
 
-<label for="self-description">How do you describe yourself?:</label>
-<select name="self-status" id="self-description">
-<option value="">--Please choose an option--</option>
-<option value="adult">I am an adult</option>
-<option value="teenager">I am a teenager</option>
-<option value="parent">I'm taking the test for my child</option>
-</select>
+    <fieldset>
+        <legend>It is more meaningful to me when….</legend>
+            <input type="radio" id="option1" name="question1">
+            <label for="option2">i receive a loving note from my partner</label><br/>
+                <input type="radio" id="option2" name="question1">
+            <label for="option2">my partner and i hug</label><br/>
 
-<label for="relationship-status">What is your relationship status?:</label>
-<select name="relationship" id="relationship-status">
-<option value="">--Select your status--</option>
-<option value="adult">I am in a relationship</option>
-<option value="teenager">I am single</option>
-</select>
-
-<fieldset>
-<legend>It is more meaningful to me when….</legend>
-<input type="radio" id="option1" name="question1">
-<label for="option1">i receive a loving note from my partner</label><br/>
-<input type="radio" id="option2" name="question1">
-<label for="option2">my partner and i hug</label><br/>
-
-<legend>It is more meaningful to me when….</legend>
-<input type="radio" id="option1" name="question2">
-<label for="option1">my partner and i spend time together alone</label><br/>
-<input type="radio" id="option2" name="question2">
-<label for="option2">my partner does something to help me practically</label><br/>
-
-<legend>It is more meaningful to me when….</legend>
-<input type="radio" id="option1" name="question3">
+        <legend>It is more meaningful to me when….</legend>
+            <input type="radio" id="option1" name="question2">
+                <label for="option2">my partner and i spend time together alone</label><br/>
+                    <input type="radio" id="option2" name="question2">
+                <label for="option2">my partner does something to help me practically</label><br/>
+        <legend>It is more meaningful to me when….</legend>
+        <input type="radio" id="option1" name="question3">
 <label for="option1">my partner buys me a gift</label><br/>
 <input type="radio" id="option2" name="question3">
 <label for="option2">i spend uninterrupted time with my partner</label><br/>
@@ -100,7 +97,7 @@
 <label for="option2">my partner helps me with a task</label>
 </fieldset>
 
-<button type="submit">submit</button>
+<button type="submit"><strong>submit</strong></button>
 </form>
 </body>
 </html>
